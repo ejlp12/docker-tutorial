@@ -158,7 +158,8 @@ Hub registry.
     Compose pulls a Redis image, builds an image for your code, and starts the
     services you defined. In this case, the code is statically copied into the image at build time.
 
-2.  Enter `http://0.0.0.0:5000/` in a browser to see the application running.
+2.  Enter `http://0.0.0.0:5000/` in a browser to see the application running 
+    if you run native docker (not using docker machine).
 
     If you're using Docker natively on Linux, Docker for Mac, or Docker for
     Windows, then the web app should now be listening on port 5000 on your
@@ -166,8 +167,9 @@ Hub registry.
     find the `Hello World` message. If this doesn't resolve, you can also try
     `http://0.0.0.0:5000`.
 
-    If you're using Docker Machine on a Mac or Windows, use `docker-machine ip
-    MACHINE_VM` to get the IP address of your Docker host. Then, open
+    If you're using Docker Machine on a Mac or Windows, to get the IP address 
+    of your Docker host use `docker-machine ip` or `docker-machine ip
+    MACHINE_VM` where MACHINE_VM is the name of your machine VM. Then, open
     `http://MACHINE_VM_IP:5000` in a browser.
 
     You should see a message in your browser saying:
